@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = AudioRecorderPreferences;
+	cell = PSLinkCell;
+	detail = AudioRecorderPreferencesListController;
+	icon = AudioRecorder.png;
+	isController = 1;
+	label = "AudioRecorder XS";
+    };
+}

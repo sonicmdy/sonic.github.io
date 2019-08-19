@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	 
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Activation methods bring up the recording start/stop interface or start/stop VoiceMemo recordings.&#13;You can install Activator for more activation methods.</string>
+			
+		</dict>
+		
+		
+		 
+		<dict>
+			<key>PostNotification</key>
+			<string>net.limneos.audiorecorder.prefsChanged</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>1</integer>
+			<key>defaults</key>
+			<string>net.limneos.audiorecorder</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>doubleTapStatusBar</string>
+			<key>label</key>
+			<string>StatusBar Double Tap</string>
+		 	<key>validTitles</key>
+			<array>
+				<string>No action</string>
+				<string>Show UI</string>
+				<string>Record VoiceMemo</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>			
+				<integer>2</integer>			
+			</array>
+		</dict>
+
+		
+		<dict>
+			<key>PostNotification</key>
+			<string>net.limneos.audiorecorder.prefsChanged</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>1</integer>
+			<key>defaults</key>
+			<string>net.limneos.audiorecorder</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>swipeLeftStatusBar</string>
+			<key>label</key>
+			<string>StatusBar Swipe Left</string>
+		 	<key>validTitles</key>
+			<array>
+				<string>No action</string>
+				<string>Show UI</string>
+				<string>Record VoiceMemo</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>			
+				<integer>2</integer>			
+			</array>
+		</dict>
+		
+		
+		<dict>
+			<key>PostNotification</key>
+			<string>net.limneos.audiorecorder.prefsChanged</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>1</integer>
+			<key>defaults</key>
+			<string>net.limneos.audiorecorder</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>swipeRightStatusBar</string>
+			<key>label</key>
+			<string>StatusBar Swipe Right</string>
+		 	<key>validTitles</key>
+			<array>
+				<string>No action</string>
+				<string>Show UI</string>
+				<string>Record VoiceMemo</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>			
+				<integer>2</integer>			
+			</array>
+		</dict>
+  
+	
+	</array>
+	<key>title</key>
+	<string>Activation Methods</string>
+</dict>
+</plist>

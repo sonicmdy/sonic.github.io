@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	 
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>System Audio option records 'What you hear', therefore it will record any audio that comes in or out from the device, while an application is using the speaker or microphone. You can bring up the recording interface by using the assignable activation methods.</string>
+			
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>net.limneos.audiorecorder.prefsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>net.limneos.audiorecorder</string>
+			<key>key</key>
+			<string>SystemAudio</string>
+			<key>label</key>
+			<string>Enable System Audio Recordings</string>
+			<key>id</key>
+			<string>ENABLE_SYSTEM_AUDIO_RECORDINGS</string>
+			
+		</dict>
+
+	
+	
+	</array>
+	<key>title</key>
+	<string>System Audio</string>
+</dict>
+</plist>

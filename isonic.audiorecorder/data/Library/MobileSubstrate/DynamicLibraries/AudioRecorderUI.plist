@@ -1,0 +1,1 @@
+{ Filter = { Bundles = ( "com.apple.InCallService","com.apple.springboard","com.apple.facetime","com.facebook.Messenger","com.skype.skype","jp.naver.line","com.sgiggle.Tango","net.whatsapp.WhatsApp","com.viber" ); Executables= ("quicklookd"); Mode="Any"; }; }

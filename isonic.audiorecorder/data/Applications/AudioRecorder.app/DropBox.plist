@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	
+	<key>items</key>
+	<array>
+		
+		 
+		 <dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>cellClass</key>
+			<string>PSSubtitleSwitchTableCell</string>
+			<key>label</key>
+			<string>Enable Web Server</string>
+			<key>id</key>
+			<string>WEB_SERVER_BUTTON</string>
+			<key>get</key>
+			<string>isWebServerRunning:</string>
+			<key>set</key>
+			<string>setWebServerRunning:specifier:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSpinnerCell</string>
+			<key>label</key>
+			<string>Enable Web Server</string>
+			<key>id</key>
+			<string>WEB_SERVER_SPINNER</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>You may enable auto-sync with your Dropbox or Google Drive account to have all recordings automatically synced to your preferred service.</string>
+	
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Dropbox</string>
+
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Link DropBox Account</string>
+			<key>alignment</key>
+			<integer>2</integer>
+			<key>id</key>
+			<string>LINK_DROPBOX_ACCOUNT</string>
+			<key>icon</key>
+			<string>dropboxColor</string>
+		</dict>
+		
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Google Drive</string>
+			<key>id</key>
+			<string>GOOGLE_DRIVE_GROUP</string>
+			
+		</dict>
+		
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Link Google Drive Account</string>
+			<key>alignment</key>
+			<integer>2</integer>
+			<key>id</key>
+			<string>LINK_GOOGLE_ACCOUNT</string>
+			<key>icon</key>
+			<string>gdriveColor</string>
+		</dict>
+		
+	 	<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Sync Settings</string>
+			<key>footerText</key>
+			<string>&#13;Sync modes:&#13;&#09;'Add only' only adds files incrementally to your sync service.&#13;&#09;'Add &amp; delete' adds newly recorded files but also deletes files from the remote service's folder when deleted in AudioRecorder application.&#13;&#09;'Both Ways' (Dropbox only) syncs from both directions. Adding older recordings in Dropbox will result in them appearing in AudioRecorder application.&#13;&#13;&#9734;Both Ways Warning: By deleting files in your Dropbox will result in deleted recordings on your device. Make sure you backup your Dropbox AudioRecorder folder and local recordings on device before enabling this feature.</string>
+	
+		</dict>
+		
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>cellClass</key>
+			<string>PSSubtitleSwitchTableCell</string>
+			<key>cellSubtitleText</key>
+			<string>Data usage charges may apply</string>
+			<key>label</key>
+			<string>Sync Over Cellular/3G</string>
+			<key>set</key>
+			<string>setCellularDataEnabled:specifier:</string>
+			<key>get</key>
+			<string>getCellularDataEnabledForSpecifier:</string>
+			<key>id</key>
+			<string>OVER_CELLULAR_DATA</string>
+		</dict>
+		
+		
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Cellular Usage Settings</string>
+			<key>alignment</key>
+			<integer>2</integer>
+			<key>id</key>
+			<string>OPEN_CELLULAR_SETTINGS</string>
+		</dict>
+		
+		 
+		<dict>
+			<key>PostNotification</key>
+			<string>net.limneos.audiorecorder.dropboxChanged</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>0</integer>
+			<key>defaults</key>
+			<string>net.limneos.audiorecorder</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>dropboxsyncmode</string>
+			<key>label</key>
+			<string>Dropbox Sync Mode</string>
+			<key>validTitles</key>
+			<array>
+				<string>Add Only</string>
+				<string>Add &amp; Delete</string>
+				<string>Both Ways</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>			
+				<integer>2</integer>			
+			</array>
+		</dict>
+		
+		
+		 
+		<dict>
+			<key>PostNotification</key>
+			<string>net.limneos.audiorecorder.dropboxChanged</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<integer>0</integer>
+			<key>defaults</key>
+			<string>net.limneos.audiorecorder</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>googlesyncmode</string>
+			<key>label</key>
+			<string>Google Sync Mode</string>
+			<key>validTitles</key>
+			<array>
+				<string>Add Only</string>
+				<string>Add &amp; Delete</string>
+
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>			
+
+			</array>
+			<key>id</key>
+			<string>GOOGLE_DRIVE_SETTINGS</string>
+		
+		</dict>
+		
+	</array>
+	<key>title</key>
+	<string>Sync/Sharing Settings</string>
+</dict>
+</plist>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSTitleCell</string>
+			<key>label</key>
+			<string>Legal</string>
+			<key>id</key>
+			<string>LEGAL</string>
+			
+		</dict>	
+	
+	
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>id</key>
+			<string>FULL_TEXT_IN_ENGLISH</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>		
+		
+		<dict>
+			<key>cell</key>
+			<string>PSTitleCell</string>
+			<key>label</key>
+			<string>Terms and Conditions</string>
+			<key>id</key>
+			<string>TERMS_TEXT</string>
+			
+		</dict>	
+	
+	
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>id</key>
+			<string>TERMS_AND_CONDITIONS</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>		
+		
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>More Info</string>			
+		</dict>	
+	
+	
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>alignment</key>
+			<integer>2</integer>
+			<key>label</key>
+			<string>Google Search</string>
+			<key>action</key>
+			<string>googleSearch</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Legal</string>
+</dict>
+</plist>

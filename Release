@@ -1,0 +1,8 @@
+Origin: Sonicmdy Repo
+Label: Sonicmdy Reop
+Suite: stable
+version: 1.0
+codename: ios
+Architectures: iphones-arm
+Components: main
+Description: iSonic Mandalay Repo

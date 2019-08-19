@@ -1,0 +1,13 @@
+Package: com.sonicmdy.isonic.audiorecorder
+Version: 0.0.1
+Architecture: iphoneos-arm
+Maintainer: iSonic <sonic.mdy@gmail.com>
+Filename: /isonic.audiorecorder.deb
+Size: 2093662
+MD5sum: 4A27D663CBE311287D0977A65633A61D
+SHA1: 361850AE5F645B68A3D92B0831FB7C4058A82731
+SHA256: 6D9A53337BEB67B510E462118BC5CD70484E7B46E51BFDE20EC47EAE297B4370
+Section: Utilities
+Description: Call Recorder <iSonic> Full
+Author: iSonic
+Name: Call Recorder for iOS 12

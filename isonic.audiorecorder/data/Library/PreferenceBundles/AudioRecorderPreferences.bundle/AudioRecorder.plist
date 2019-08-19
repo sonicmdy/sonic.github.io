@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>entry</key>
+	<dict>
+		<key>cell</key>
+		<string>PSLinkCell</string>
+		<key>icon</key>
+		<string>AudioRecorder.png</string>
+		<key>label</key>
+		<string>AudioRecorder</string>
+	</dict>
+	<key>items</key>
+	<array>
+
+
+		<dict>
+			<key>PostNotification</key>
+			<string>net.limneos.audiorecorder.prefsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>net.limneos.audiorecorder</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+			<key>id</key>
+			<string>ENABLED</string>
+		</dict>
+		 
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Global Settings</string>
+			<key>id</key>
+			<string>GLOBAL_SETTINGS</string>
+		</dict>	
+		<dict>
+			<key>PostNotification</key>
+			<string>net.limneos.audiorecorder.prefsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>net.limneos.audiorecorder</string>
+			<key>key</key>
+			<string>alwaysShowUI</string>
+			<key>label</key>
+			<string>Auto-Show Recording Icon</string>
+			<key>id</key>
+			<string>SHOW_UI_AUTOMATICALLY</string>
+		</dict>
+				
+		<dict>
+			<key>PostNotification</key>
+			<string>net.limneos.audiorecorder.prefsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>net.limneos.audiorecorder</string>
+			<key>key</key>
+			<string>badgeAppIcon</string>
+			<key>label</key>
+			<string>Icon Badges</string>
+			<key>id</key>
+			<string>BADGE_APP_ICON</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>net.limneos.audiorecorder.prefsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>net.limneos.audiorecorder</string>
+			<key>key</key>
+			<string>playWarningAudio</string>
+			<key>label</key>
+			<string>Play Warning Audio Message</string>
+			<key>id</key>
+			<string>PLAY_WARNING</string>
+		</dict>
+			
+		
+		<dict>
+			<key>PostNotification</key>
+			<string>net.limneos.audiorecorder.prefsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>net.limneos.audiorecorder</string>
+			<key>key</key>
+			<string>playBeepSound</string>
+			<key>label</key>
+			<string>Play Beep Sound</string>
+			<key>id</key>
+			<string>PLAY_BEEP_SOUND</string>
+		</dict>
+		<dict>
+            <key>activatorListener</key>
+            <string>AudioRecorder</string>
+            <key>bundle</key>
+            <string>LibActivator</string>
+            <key>cell</key>
+            <string>PSLinkCell</string>
+            <key>isController</key>
+            <true/>
+            <key>label</key>
+            <string>UI Activator Methods</string>
+            <key>id</key>
+            <string>ACTIVATOR</string>
+        </dict>
+        <dict>
+            <key>activatorListener</key>
+            <string>AudioRecorder VoiceMemo</string>
+            <key>bundle</key>
+            <string>LibActivator</string>
+            <key>cell</key>
+            <string>PSLinkCell</string>
+            <key>isController</key>
+            <true/>
+            <key>label</key>
+            <string>VoiceMemo Activator Methods</string>
+            <key>id</key>
+            <string>ACTIVATOR_VOICE_MEMO</string>
+        </dict>
+		<dict>
+            <key>cell</key>
+            <string>PSLinkListCell</string>
+            <key>label</key>
+            <string>Activation Methods</string>
+            <key>id</key>
+            <string>NATIVE_ACTIVATION</string>
+            <key>detail</key>
+            <string>AudioRecorderNativeActivationController</string>
+        </dict>
+		
+		<dict>
+			<key>PostNotification</key>
+			<string>net.limneos.audiorecorder.prefsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>net.limneos.audiorecorder</string>
+			<key>key</key>
+			<string>audioVisualization</string>
+			<key>label</key>
+			<string>Audio Visualization</string>
+			<key>id</key>
+			<string>AUDIO_VISUALIZATION</string>
+		</dict>
+			
+        
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Application Settings</string>
+			<key>id</key>
+			<string>APPLICATION_SETTINGS</string>
+			<key>footerText</key>
+			<string>Save Contact Name in FileName option will write the contact's name rather than their phone number/email in the recording filename.</string>
+		</dict>	
+		<dict>
+			<key>PostNotification</key>
+			<string>net.limneos.audiorecorder.updateApplicationTable</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>net.limneos.audiorecorder</string>
+			<key>key</key>
+			<string>showDurationInCells</string>
+			<key>label</key>
+			<string>Show Recording's Duration</string>
+			<key>id</key>
+			<string>SHOW_ME_IN_CELL</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>net.limneos.audiorecorder.updateApplicationTable</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>net.limneos.audiorecorder</string>
+			<key>key</key>
+			<string>showMBInCells</string>
+			<key>label</key>
+			<string>Show Recording's MB Usage</string>
+			<key>id</key>
+			<string>SHOW_ME_IN_CELL</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>net.limneos.audiorecorder.prefsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>net.limneos.audiorecorder</string>
+			<key>key</key>
+			<string>saveNamesInsteadOfNumbers</string>
+			<key>label</key>
+			<string>Save Contact Name in FileName</string>
+			<key>id</key>
+			<string>SAVE_CONTACT_NAME_IN_FILENAME</string>
+		</dict>
+		
+		
+		
+		
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Fix Documents Permissions</string>
+			<key>id</key>
+			<string>FIX_DOCUMENTS_PERMISSIONS</string>
+			<key>action</key>
+			<string>fixDocumentsPermissions:</string>
+
+		</dict>
+		
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Audio Format Settings</string>
+			<key>footerText</key>
+			<string>Use this option to have speaker audio saved to left channel and mic audio saved to right channel in the audio file.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>net.limneos.audiorecorder.prefsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>net.limneos.audiorecorder</string>
+			<key>key</key>
+			<string>interleavedAudio</string>
+			<key>label</key>
+			<string>Separate Audio Channels</string>
+			<key>id</key>
+			<string>INTERLEAVED_AUDIO</string>
+		</dict>
+		
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Call Recording Settings</string>
+			<key>id</key>
+			<string>RECORDING_SETTINGS</string>
+		</dict>
+		
+		
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>label</key>
+			<string>System Audio</string>
+			<key>id</key>
+			<string>SYSTEM_AUDIO</string>
+			<key>detail</key>
+			<string>AudioRecorderSystemAudioController</string>
+			
+		</dict>
+		
+
+		
+		 
+	 
+		  
+	 
+		 
+		
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>label</key>
+			<string>Legal</string>
+			<key>id</key>
+			<string>LEGAL</string>
+			<key>detail</key>
+			<string>LegalInfoController</string>
+			
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>detail</key>
+			<string>AudioRecorderBrowser</string>
+			<key>key</key>
+			<string>webview</string>
+			<key>label</key>
+			<string>Audio Recorder FAQ</string>
+			
+		</dict>
+ 
+		<dict>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>label</key>
+			<string>Translation Credits</string>
+			<key>detail</key>
+			<string>TranslationCreditsController</string>
+			
+		</dict>
+		
+	 
+		
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		
+		<dict>
+			<key>PostNotification</key>
+			<string>net.limneos.audiorecorder.prefsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>net.limneos.audiorecorder</string>
+			<key>key</key>
+			<string>enableLogging</string>
+			<key>label</key>
+			<string>Enable Logging</string>
+			<key>id</key>
+			<string>ENABLE_LOGGING</string>
+		</dict>
+		
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>label</key>
+			<string>Logs</string>
+			<key>id</key>
+			<string>LOGCONTROLLER</string>
+			<key>detail</key>
+			<string>AudioRecorderLoggingController</string>
+			
+		</dict>
+		
+		
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		
+		<dict>
+            <key>cell</key>
+            <string>PSButtonCell</string>
+            <key>label</key>
+            <string>Your Payment Information</string>
+            <key>id</key>
+            <string>PAYMENT_INFO</string>
+            <key>action</key>
+            <string>openPaymentInfo:</string>
+            <key>alignment</key>
+            <integer>2</integer>
+        </dict>
+        
+		
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSTitleCell</string>
+			<key>label</key>
+			<string>First iPhone Call Recorder Ever</string>
+			<key>alignment</key>
+			<integer>2</integer>
+			<key>cellClass</key>
+			<string>AudioRecorderCreditsCell</string>
+						
+		</dict>
+		
+		
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>&#169;2019 Elias Limneos</string>	
+			<key>footerAlignment</key>
+			<integer>1</integer>	
+			
+		</dict>
+	
+	</array>
+	<key>title</key>
+	<string>AudioRecorder XS</string>
+</dict>
+</plist>

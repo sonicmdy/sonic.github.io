@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	 
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Enabling all calls will record all calls (except for the excluded contacts) for the selected application. If disabled, you can manually bring up the recording interface using the activation methods while in a call.</string>
+			
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>net.limneos.audiorecorder.prefsChanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>net.limneos.audiorecorder</string>
+			<key>key</key>
+			<string>none</string>
+			<key>label</key>
+			<string>Automatically Record All Calls</string>
+			<key>id</key>
+			<string>RECORD_ALL</string>
+			<key>get</key>
+			<string>getAutoRecordAllCalls:</string>
+			<key>set</key>
+			<string>setAutoRecordAllCalls:specifier:</string>
+		</dict>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>id</key>
+			<string>APP_OPTIONS_SPACER</string>
+			
+		</dict>
+	
+	</array>
+	 
+</dict>
+</plist>
