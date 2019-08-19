@@ -1,13 +1,13 @@
-Package: com.sonicmdy.isonic.audiorecorder
-Version: 0.0.1
+Package: com.supermamon.newpackage
+Version: 2.0.0-1
+Section: Tweaks
+Maintainer: Reposi3 <reposithree@gmail.com>
+Depends: firmware (>7.0), mobilesubstrate
 Architecture: iphoneos-arm
-Maintainer: iSonic <sonic.mdy@gmail.com>
-Filename: /isonic.audiorecorder.deb
-Size: 2093662
-MD5sum: 4A27D663CBE311287D0977A65633A61D
-SHA1: 361850AE5F645B68A3D92B0831FB7C4058A82731
-SHA256: 6D9A53337BEB67B510E462118BC5CD70484E7B46E51BFDE20EC47EAE297B4370
-Section: Utilities
-Description: Call Recorder <iSonic> Full
-Author: iSonic
-Name: Call Recorder for iOS 12
+Filename: ./debs/com.supermamon.newpackage_2.0.0-1_iphoneos-arm.deb
+Size: 854
+MD5sum: 85a01c41aaaa72b48b08d9d0a67f3016
+Description: This is a sample new package. Firmware should be greater than 7.0
+Name: New Package
+Author: Reposi3 <reposithree@gmail.com>
+Depiction: https://supermamon.github.io/Reposi3/depictions/?p=com.supermamon.newpackage
